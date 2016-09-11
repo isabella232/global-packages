@@ -1,5 +1,7 @@
 # global-packages
 
+[![Build Status](https://travis-ci.org/leo/global-packages.svg?branch=master)](https://travis-ci.org/leo/global-packages)
+
 List global node packages easily.
 
 ## Usage
