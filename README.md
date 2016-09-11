@@ -2,6 +2,31 @@
 
 List global node packages easily.
 
+## Usage
+
+Simply install the package...
+
+```bash
+$ npm install --save global-packages
+```
+
+...and load it:
+
+```js
+import globalPackages from 'global-packages'
+
+let packages
+
+try {
+  packages = await globalPackages()
+} catch (err) {
+  console.error(err)
+  return
+}
+
+console.log(packages) // ['npm', ...]
+```
+
 ## Contribute
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
