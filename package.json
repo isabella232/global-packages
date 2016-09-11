@@ -1,0 +1,26 @@
+{
+  "name": "global-packages",
+  "version": "0.1.0",
+  "description": "List global node packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": "leo/global-packages",
+  "keywords": [
+    "global",
+    "packages",
+    "node",
+    "modules",
+    "load"
+  ],
+  "author": "leo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo/global-packages/issues"
+  },
+  "homepage": "https://github.com/leo/global-packages#readme",
+  "devDependencies": {
+    "xo": "^0.16.0"
+  }
+}
