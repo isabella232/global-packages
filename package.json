@@ -6,6 +6,9 @@
   "scripts": {
     "test": "xo"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": "leo/global-packages",
   "keywords": [
     "global",
