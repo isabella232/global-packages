@@ -1,19 +1,33 @@
+// Native
+const path = require('path')
+
 // Packages
-const moduleDir = require('global-modules')
 const fs = require('fs-promise')
+const which = require('which-promise')
+
+const modulePath = () => new Promise((resolve, reject) => {
+  const npmLocation = which('npm')
+
+  npmLocation.then(dir => {
+    const globalPath = path.join(dir, '../../lib/node_modules')
+    resolve(globalPath)
+  })
+
+  npmLocation.catch(reject)
+})
 
 module.exports = () => new Promise((resolve, reject) => {
-  if (!moduleDir) {
-    reject('Could not retrieve module directory path')
-    return
-  }
+  const moduleDir = modulePath()
+  moduleDir.catch(reject)
 
-  // Read contents of global module directory
-  const walker = fs.readdir(moduleDir)
+  moduleDir.then(directory => {
+    // Read contents of global module directory
+    const walker = fs.readdir(directory)
 
-  // If everything went fine, directly return the list of modules
-  walker.then(resolve)
+    // If everything went fine, directly return the list of modules
+    walker.then(resolve)
 
-  // If not, hand back the error
-  walker.catch(reject)
+    // If not, hand back the error
+    walker.catch(reject)
+  })
 })

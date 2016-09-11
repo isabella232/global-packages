@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "fs-promise": "^0.5.0",
-    "global-modules": "^0.2.3"
+    "which-promise": "^1.0.0"
   }
 }
