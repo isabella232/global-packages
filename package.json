@@ -9,7 +9,7 @@
   "files": [
     "index.js"
   ],
-  "repository": "leo/global-packages",
+  "repository": "zeit/global-packages",
   "keywords": [
     "global",
     "packages",
