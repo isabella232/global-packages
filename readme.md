@@ -17,7 +17,7 @@ npm install --save global-packages
 After that, load it:
 
 ```js
-import globalPackages from 'global-packages'
+const globalPackages = require('global-packages')
 
 let packages
 
@@ -28,7 +28,30 @@ try {
   return
 }
 
-console.log(packages) // ['npm', ...]
+console.log(packages)
+```
+
+This is how the output will look like:
+
+```js
+[
+  {
+    name: 'args',
+    linked: true,
+    path: '/usr/local/lib/node_modules/args'
+  },
+  {
+    name: 'now',
+    linked: false,
+    path: '/usr/local/lib/node_modules/now'
+  },
+  {
+    name: 'serve',
+    linked: false,
+    path: '/usr/local/lib/node_modules/serve'
+  },
+  ...
+]
 ```
 
 ## Contribute
