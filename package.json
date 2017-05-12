@@ -4,7 +4,9 @@
   "description": "List global node packages",
   "main": "index.js",
   "scripts": {
-    "test": "xo && ava"
+    "lint": "xo",
+    "unit": "ava",
+    "test": "npm run lint && npm run unit"
   },
   "files": [
     "index.js"
@@ -30,6 +32,7 @@
   },
   "dependencies": {
     "fs-promise": "2.0.3",
-    "global-modules": "0.2.3"
+    "global-modules": "0.2.3",
+    "path-type": "2.0.0"
   }
 }

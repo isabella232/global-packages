@@ -17,5 +17,6 @@ test('Output', async t => {
 
 test('Output is array', async t => {
   const list = await globalPackages()
+  console.log(list)
   t.true(Array.isArray(list))
 })
