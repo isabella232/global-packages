@@ -24,15 +24,11 @@
   },
   "author": "leo",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leo/global-packages/issues"
-  },
-  "homepage": "https://github.com/leo/global-packages#readme",
   "devDependencies": {
-    "xo": "^0.17.0"
+    "xo": "0.17.0"
   },
   "dependencies": {
-    "fs-promise": "^1.0.0",
-    "which-promise": "^1.0.0"
+    "fs-promise": "1.0.0",
+    "which-promise": "1.0.0"
   }
 }
