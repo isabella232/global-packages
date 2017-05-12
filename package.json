@@ -4,7 +4,7 @@
   "description": "List global node packages",
   "main": "index.js",
   "scripts": {
-    "test": "xo"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -25,6 +25,7 @@
   "author": "leo",
   "license": "MIT",
   "devDependencies": {
+    "ava": "0.19.1",
     "xo": "0.18.2"
   },
   "dependencies": {
