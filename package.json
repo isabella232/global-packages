@@ -25,10 +25,10 @@
   "author": "leo",
   "license": "MIT",
   "devDependencies": {
-    "xo": "0.17.0"
+    "xo": "0.18.2"
   },
   "dependencies": {
-    "fs-promise": "1.0.0",
+    "fs-promise": "2.0.3",
     "which-promise": "1.0.0"
   }
 }
